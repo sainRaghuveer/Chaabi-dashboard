@@ -1,58 +1,145 @@
 .container{
     flex: 1;
     height: 100vh;
-    border: 1px solid red;
+    background-color: #ffffff;
 }
 
 .logo{
     height: 100px;
-    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo>img{
+    width: 160px;
+    height: 78px;
 }
 
 .sidebar-options{
     height: 570px;
-    border: 1px solid gray;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
 }
 
 .dashboard{
-    border: 1px solid pink;
-    height:40px;
-    padding: 5px;
+    padding: 7px;
     margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    color: #0D62FF;
+}
+
+.dashboard>span{
+    margin-left: 10px;
+}
+
+.dashboard:hover{
+    background-color: #0D62FF;
+    color: white;
+    cursor: pointer;
 }
 
 .trainings{
-    border: 1px solid teal;
-    height:40px;
-    padding: 5px;
+    padding: 7px;
     margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    color: #0D62FF;
+}
+
+.trainings>span{
+    margin-left: 10px;
+}
+
+.trainings:hover{
+    background-color: #0D62FF;
+    color: white;
+    cursor: pointer;
 }
 
 .analytics{
-    border: 1px solid gray;
-    height:40px;
-    padding: 5px;
+    padding: 7px;
     margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    color: #0D62FF;
+}
+
+.analytics>span{
+    margin-left: 10px;
+}
+
+.analytics:hover{
+    background-color: #0D62FF;
+    color: white;
+    cursor: pointer;
 }
 
 .users{
-    border: 1px solid yellow;
-    height:40px;
-    padding: 5px;
+    padding: 7px;
     margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    color: #0D62FF;
+}
+
+.users>span{
+    margin-left: 10px;
+}
+
+.users:hover{
+    background-color: #0D62FF;
+    color: white;
+    cursor: pointer;
 }
 
 .myaccount{
-    border: 1px solid blue;
-    height:40px;
-    padding: 5px;
+    padding: 7px;
     margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    color: #0D62FF;
+}
+
+.myaccount>span{
+    margin-left: 10px;
+}
+
+.myaccount:hover{
+    background-color: #0D62FF;
+    color: white;
+    cursor: pointer;
 }
 
 .support{
-    border: 1px solid black;
-    height:40px;
-    padding: 5px;
+    padding: 7px;
     margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    color: #0D62FF;
+}
+
+.support>span{
+    margin-left: 10px;
+}
+
+.support:hover{
+    background-color: #0D62FF;
+    color: white;
+    cursor: pointer;
 }

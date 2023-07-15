@@ -1,12 +1,12 @@
 .container{
     flex: 4;
     height: 100vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .heading{
     height: 100px;
-    border: 1px solid teal;
+    border: 1px solid gray;
 }
 
 .charts-container{
@@ -15,7 +15,7 @@
 
 .upper-charts{
     height: 110px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@
 
 .middle-charts{
     height: 260px;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -33,20 +33,26 @@
 .middle-charts-first{
    width: 23%;
     height: 260px;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .middle-charts-second{
     width:74%;
     height: 260px;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .bottom-charts{
     height: 200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,21 +60,30 @@
 
 .bottom-charts-first{
     width: 23%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     height: 200px;
     border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .bottom-charts-second{
     width: 25%;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     height: 200px;
     border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .bottom-charts-third{
     width: 46%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 200px;
     border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
+
 }

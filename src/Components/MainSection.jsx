@@ -21,8 +21,8 @@ const MainSection = () => {
                     ))}
                 </div>
                 <div className={styles['middle-charts']}>
-                    <div className={styles['middle-charts-first']}>Chart-1</div>
-                    <div className={styles['middle-charts-second']}>Chart-2</div>
+                    <div className={styles['middle-charts-first']}>Chapter Wise Status</div>
+                    <div className={styles['middle-charts-second']}>Last 14 Days Active workers in Training</div>
                 </div>
                 <div className={styles['bottom-charts']}>
                     <div className={styles['bottom-charts-first']}>Chart-1</div>
