@@ -1,0 +1,58 @@
+.container{
+    flex: 1;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.logo{
+    height: 100px;
+    border: 1px solid gray;
+}
+
+.sidebar-options{
+    height: 570px;
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.dashboard{
+    border: 1px solid pink;
+    height:40px;
+    padding: 5px;
+    margin:5px;
+}
+
+.trainings{
+    border: 1px solid teal;
+    height:40px;
+    padding: 5px;
+    margin:5px;
+}
+
+.analytics{
+    border: 1px solid gray;
+    height:40px;
+    padding: 5px;
+    margin:5px;
+}
+
+.users{
+    border: 1px solid yellow;
+    height:40px;
+    padding: 5px;
+    margin:5px;
+}
+
+.myaccount{
+    border: 1px solid blue;
+    height:40px;
+    padding: 5px;
+    margin:5px;
+}
+
+.support{
+    border: 1px solid black;
+    height:40px;
+    padding: 5px;
+    margin:5px;
+}
