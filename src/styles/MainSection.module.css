@@ -31,7 +31,7 @@
 }
 
 .middle-charts-first{
-   width: 23%;
+   width: 23.7%;
     height: 260px;
     /* border: 1px solid teal; */
     border-radius: 10px;
@@ -40,14 +40,41 @@
 
 }
 
+.middle-charts-first>h5{
+    margin: 1px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
 .middle-charts-second{
-    width:74%;
+    width:74.5%;
     height: 260px;
     /* border: 1px solid brown; */
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
 
+}
+
+.middle-charts-second-header{
+    margin: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-charts-second-header>h5{
+    margin: 1px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform:capitalize;
+    padding: 10px;
 }
 
 .bottom-charts{
@@ -59,8 +86,28 @@
 }
 
 .bottom-charts-first{
-    width: 23%;
+    width: 23.7%;
     /* border: 1px solid gray; */
+    height: 180px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.bottom-charts-first>h5{
+    margin: 1px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.bottom-charts-second{
+    width: 26%;
+    /* border: 1px solid greenyellow; */
     height: 200px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -68,14 +115,14 @@
 
 }
 
-.bottom-charts-second{
-    width: 25%;
-    /* border: 1px solid greenyellow; */
-    height: 200px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
-
+.bottom-charts-second>h5{
+    margin: 1px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px;
 }
 
 .bottom-charts-third{
@@ -86,4 +133,14 @@
     background-color: #ffffff;
     box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
 
+}
+
+.bottom-charts-third>h5{
+    margin: 1px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px;
 }

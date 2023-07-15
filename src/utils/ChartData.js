@@ -1,13 +1,13 @@
 export const UpperChartData=[
     {
         title:"In Training Workers",
-        data:3354,
+        data:"3,354",
         percents:"20%",
         number:234,
     },
     {
         title:"Video Watch-Time (Hrs)",
-        data:2433,
+        data:"2,433",
         percents:"20%",
         number:435,
     },

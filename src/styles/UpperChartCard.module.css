@@ -10,12 +10,17 @@
 
 .card>h5{
     margin: 1px;
-    font-weight:400;
-    font-size: 14px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform:capitalize;
 }
 
 .card>h3{
     margin: 15px 0px -10px 0px;
+    font-weight:900;
+    font-size: 20px;
 }
 
 .card-child{

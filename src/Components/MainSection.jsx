@@ -7,8 +7,8 @@ const MainSection = () => {
     return (
         <div className={styles.container}>
             <div className={styles.heading}>
-                <h1>Hello, Puneet Dhiman</h1> 
-             </div>
+                <h1>Hello, Puneet Dhiman</h1>
+            </div>
             <div className={styles['charts-container']}>
                 <div className={styles['upper-charts']}>
                     {UpperChartData.map((el, index) => (
@@ -21,13 +21,26 @@ const MainSection = () => {
                     ))}
                 </div>
                 <div className={styles['middle-charts']}>
-                    <div className={styles['middle-charts-first']}>Chapter Wise Status</div>
-                    <div className={styles['middle-charts-second']}>Last 14 Days Active workers in Training</div>
+                    <div className={styles['middle-charts-first']}>
+                        <h5>Chapter Wise Status</h5>
+                    </div>
+                    <div className={styles['middle-charts-second']}>
+                        <div className={styles['middle-charts-second-header']}>
+                            <h5>Last 14 Days Active workers in Training</h5>
+                            <h5>Last 14 Days</h5>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles['bottom-charts']}>
-                    <div className={styles['bottom-charts-first']}>Chart-1</div>
-                    <div className={styles['bottom-charts-second']}>Chart-2</div>
-                    <div className={styles['bottom-charts-third']}>Chart-2</div>
+                    <div className={styles['bottom-charts-first']}>
+                        <h5>Monthly Training Activity</h5>
+                    </div>
+                    <div className={styles['bottom-charts-second']}>
+                        <h5>Quiz Passing %</h5>
+                    </div>
+                    <div className={styles['bottom-charts-third']}>
+                        <h5>Daily Training Completions</h5>
+                    </div>
                 </div>
             </div>
 
