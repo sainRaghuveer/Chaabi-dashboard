@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from "../styles/MainSection.module.css";
-import { UpperChartData } from "../utils/ChartData"
+import { UpperChartData, bottomLastChartData, midLastChartData } from "../utils/ChartData"
 import UpperChartCard from './UpperChartCard';
+import BarChart from './BarChart';
+import DoughnutChart from './DoughnutChart';
 
 const MainSection = () => {
     return (
@@ -13,10 +15,13 @@ const MainSection = () => {
                 <div className={styles['upper-charts']}>
                     {UpperChartData.map((el, index) => (
                         <UpperChartCard
+                            key={el.title}
                             title={el.title}
                             data={el.data}
                             percents={el.percents}
                             number={el.number}
+                            color={el.color}
+                            bg={el.bg}
                         />
                     ))}
                 </div>
@@ -29,6 +34,7 @@ const MainSection = () => {
                             <h5>Last 14 Days Active workers in Training</h5>
                             <h5>Last 14 Days</h5>
                         </div>
+                        {<BarChart data={midLastChartData} />}
                     </div>
                 </div>
                 <div className={styles['bottom-charts']}>
@@ -37,9 +43,14 @@ const MainSection = () => {
                     </div>
                     <div className={styles['bottom-charts-second']}>
                         <h5>Quiz Passing %</h5>
+                        {<DoughnutChart />}
                     </div>
                     <div className={styles['bottom-charts-third']}>
-                        <h5>Daily Training Completions</h5>
+                        <div className={styles['bottom-charts-third-header']}>
+                            <h5>Daily Training Completions</h5>
+                            <h5>Last 7 Days</h5>
+                        </div>
+                        <BarChart data={bottomLastChartData} />
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 .card{
-    height: 85%;
+    height: 100%;
     /* border: 1px solid aqua; */
-    width: 22%;
-    border-radius: 10px;
+    width: 24%;
     padding: 10px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #ffffff;
 }
@@ -17,22 +17,63 @@
     text-transform:capitalize;
 }
 
-.card>h3{
-    margin: 15px 0px -10px 0px;
-    font-weight:900;
-    font-size: 20px;
-}
-
 .card-child{
     margin: 1px;
-    width: 28%;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-child-content{
+    width: 100%;
+}
+
+.card-child-content>h3{
+    font-weight:900;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.card-child-content>div{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-child-content>div>p:nth-child(1){
+    background: #e6f4ed;
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.card-child-content>div>p:nth-child(1)>svg{
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.card-child-content>div>p:nth-child(1)>span{
+    display: inline-block;
+}
+
+.card-child-chart>div{
+    margin: -5px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.card-child>p:nth-child(1){
-    background: #e6f4ed;
-    padding: 5px;
-    border-radius: 5px;
+.card-child-chart>div>span{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 8px;
+    color: black;
+    margin: 0px 4px;
 }
+
