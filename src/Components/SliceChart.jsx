@@ -7,7 +7,7 @@ Chart.register(ArcElement, Tooltip, CategoryScale, Title);
 
 const PieChart = () => {
     const data = {
-        labels: ['Finished Training', 'Chapter B', "Haven't Started Yet", 'Chapter A', 'Chapter C'],
+        labels: ['Finished Training in %', 'Chapter B in %', "Haven't Started Yet in %", 'Chapter A in %', 'Chapter C in %'],
         datasets: [
             {
                 data: [22, 22, 34, 7, 15],

@@ -10,7 +10,7 @@
 
 .card>h5{
     margin: 1px;
-    font-size: 17px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -37,10 +37,14 @@
 }
 
 .card-child-content>div{
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-child-content>div>p{
+    font-size: 14px;
 }
 
 .card-child-content>div>p:nth-child(1){
@@ -50,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 65%;
 }
 
 .card-child-content>div>p:nth-child(1)>svg{

@@ -1,36 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&family=Work+Sans:wght@300&display=swap');
 .container {
     flex: 4;
-    height: 100vh;
-    /* border: 1px solid blue; */
+    /* height: 100vh; */
 }
 
 .heading {
     position: relative;
     height: 100px;
     border: 1px solid gray;
-    /* background: repeating-radial-gradient( #fff 20%, rgba(7, 7, 109, 0.75) 80%); */
     background-size: 100% 100%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     z-index: -1;
 }
 
-.heading>div{
+.heading>div {
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: repeating-radial-gradient( #0c58e6 20%, #0735a8 70%);
+    background: repeating-radial-gradient(#0c58e6 20%, #0735a8 70%);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     z-index: -1;
 }
 
-.heading>h1{
+.heading>div>div {
+    color: #FFF;
+    margin-left: 37.73px;
+}
+
+.heading>div>div>h1 {
+    font-family: poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 140%;
+}
+
+.heading>div>div>p {
+    font-family: poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.heading>h1 {
     position: absolute;
     z-index: -1;
 }
 
 .charts-container {
+    font-family: poppins;
     padding: 10px;
     position: relative;
     z-index: 1;
@@ -48,14 +70,14 @@
 .middle-charts {
     height: 260px;
     /* border: 1px solid pink; */
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .middle-charts-first {
-    width: 23.7%;
+    width: 23.8%;
     height: 260px;
     /* border: 1px solid teal; */
     border-radius: 10px;
@@ -66,7 +88,7 @@
 
 .middle-charts-first>h5 {
     margin: 1px;
-    font-size: 21px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -98,7 +120,7 @@
 
 .middle-charts-second-header>h5 {
     margin: 1px;
-    font-size: 21px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -117,7 +139,7 @@
 .bottom-charts-first {
     width: 23.7%;
     /* border: 1px solid gray; */
-    height: 180px;
+    height: 210px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
@@ -126,7 +148,7 @@
 
 .bottom-charts-first>h5 {
     margin: 1px;
-    font-size: 21px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -134,10 +156,25 @@
     padding: 10px;
 }
 
+.bottom-charts-first>div {
+    margin: 1px;
+    font-style: normal;
+    text-transform: capitalize;
+    padding: 10px;
+    line-height:8px;
+}
+
+.bottom-charts-first>div>p{
+    line-height:10px;
+    font-size: 14px;
+    font-family: poppins;
+    display: inline;
+}
+
 .bottom-charts-second {
     width: 26%;
     /* border: 1px solid greenyellow; */
-    height: 180px;
+    height: 210px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
@@ -146,7 +183,7 @@
 
 .bottom-charts-second>h5 {
     margin: 1px;
-    font-size: 21px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -157,7 +194,7 @@
 .bottom-charts-third {
     width: 46%;
     /* border: 1px solid green; */
-    height: 180px;
+    height: 210px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0px 7.0496907234191895px 28.198762893676758px 0px rgba(0, 0, 0, 0.05);
@@ -173,7 +210,7 @@
 
 .bottom-charts-third-header>h5 {
     margin: 1px;
-    font-size: 21px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
