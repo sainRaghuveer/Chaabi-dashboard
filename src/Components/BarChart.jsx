@@ -39,8 +39,8 @@ const BarChart = ({data}) => {
     }, []);
 
     return (
-        <div style={{ width: "90%",height:"80%", margin:"auto", display:"flex", justifyContent:"center", alignItems:"center" }}>
-            <canvas style={{width:"90%",height:"80%",display:"flex", justifyContent:"center", alignItems:"center"}} ref={chartRef} />
+        <div style={{ width: "90%",height:"78%", margin:"auto", display:"flex", justifyContent:"center", alignItems:"center" }}>
+            <canvas style={{width:"90%",height:"78%",display:"flex", justifyContent:"center", alignItems:"center"}} ref={chartRef} />
         </div>
     )
 

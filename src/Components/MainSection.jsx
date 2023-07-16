@@ -4,12 +4,15 @@ import { UpperChartData, bottomLastChartData, midLastChartData } from "../utils/
 import UpperChartCard from './UpperChartCard';
 import BarChart from './BarChart';
 import DoughnutChart from './DoughnutChart';
+import PieChart from './SliceChart';
 
 const MainSection = () => {
     return (
         <div className={styles.container}>
             <div className={styles.heading}>
-                <h1>Hello, Puneet Dhiman</h1>
+                <div>
+                    <h1>Hello, Puneet Dhiman</h1>
+                </div>
             </div>
             <div className={styles['charts-container']}>
                 <div className={styles['upper-charts']}>
@@ -28,6 +31,7 @@ const MainSection = () => {
                 <div className={styles['middle-charts']}>
                     <div className={styles['middle-charts-first']}>
                         <h5>Chapter Wise Status</h5>
+                        <PieChart/>
                     </div>
                     <div className={styles['middle-charts-second']}>
                         <div className={styles['middle-charts-second-header']}>
