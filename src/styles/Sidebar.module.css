@@ -1,4 +1,4 @@
-.container{
+.container {
     flex: 1;
     height: 100vh;
     background-color: #ffffff;
@@ -8,29 +8,29 @@
     font-family: poppins;
 }
 
-.logo{
+.logo {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo>img{
+.logo>img {
     width: 175px;
     height: 55px;
 }
 
-.sidebar-options{
+.sidebar-options {
     padding: 15px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     border-top: 1px solid gray;
     /* border-right: 1px solid gray; */
 }
 
-.sidebar-option{
+.sidebar-option {
     font-size: 14px;
     padding: 7px;
-    margin:5px;
+    margin: 5px;
     border-radius: 5px;
     display: flex;
     justify-self: flex-start;
@@ -39,27 +39,28 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.sidebar-option>*{
+.sidebar-option>* {
     z-index: 2;
     transition: color 400ms ease-in-out;
 }
 
-.sidebar-option:hover>*{
+.sidebar-option:hover>* {
     color: white;
 }
 
-.sidebar-option:hover{
+.sidebar-option:hover {
     background: transparent;
 }
 
-.sidebar-option>span{
+.sidebar-option>span {
     margin-left: 10px;
-    
+
 }
 
-.sidebar-option::before{
+.sidebar-option::before {
     content: '';
     height: 100%;
     width: 0%;
@@ -73,16 +74,17 @@
     z-index: 1;
 }
 
-.sidebar-option:hover::before{
+.sidebar-option:hover::before {
     width: 100%;
 }
 
 
-@media all and (width<=1100px){
-    .logo{
+@media all and (width<=1100px) {
+    .logo {
         display: none;
     }
-    .container{
+
+    .container {
         flex: 1;
         /* width: fit-content; */
         /* flex: none; */
@@ -95,17 +97,18 @@
         /* z-index: 5; */
         /* height: fit-content; */
     }
+
     /* .sidebar-options{
         display: flex;
         justify-content: space-around;
         align-items: center;
     } */
 
-    .sidebar-option>span{
+    .sidebar-option>span {
         display: none;
     }
 
-    .sidebar-options{
+    .sidebar-options {
         padding: 0;
     }
 }
