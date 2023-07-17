@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Chart, ArcElement, Tooltip, DoughnutController } from 'chart.js';
+import styles from "../styles/DoughnutChart.module.css";
 
 const DoughnutChart = () => {
     const chartRef = useRef(null);
@@ -36,27 +37,27 @@ const DoughnutChart = () => {
                     }
                 }
             }
-        });
+        })
     }, []);
 
     return (
-        <div style={{ display: 'flex', width: '100%', height: "70%", margin: "auto", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "-15px" }}>
-            <canvas ref={chartRef} style={{ width: '100%', marginRight: '20px', height: "80%", margin: "auto", display: "flex", justifyContent: "center", alignItems: "center" }} />
+        <div className={styles.container}>
+            <canvas ref={chartRef}/>
             <div>
-                <ul style={{ listStyle: 'none', padding: 0 }}>
-                    <li style={{ marginBottom: '10px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <span style={{ display: 'inline-block', width: '10px', height: '10px', backgroundColor: 'green', marginRight: '5px', borderRadius: '50%' }}></span>
+                <ul>
+                    <li>
+                        <div className={styles['first-list-child-one']}>
+                            <span></span>
                             <span style={{ fontWeight: 'bold' }}>Passed</span>
                         </div>
-                        <div style={{ marginLeft: '15px',fontSize:"10px" }}>{passedWorkers} workers</div>
+                        <div className={styles['first-list-child-two']}>{passedWorkers} workers</div>
                     </li>
-                    <li style={{ marginBottom: '10px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <span style={{ display: 'inline-block', width: '10px', height: '10px', backgroundColor: 'red', marginRight: '5px', borderRadius: '50%' }}></span>
-                            <span style={{ fontWeight: 'bold' }}>Failed</span>
+                    <li>
+                        <div className={styles['second-list-child-one']}>
+                            <span></span>
+                            <span>Failed</span>
                         </div>
-                        <div style={{ marginLeft: '15px', fontSize:"10px" }}>{failedWorkers} workers</div>
+                        <div className={styles['second-list-child-two']}>{failedWorkers} workers</div>
                     </li>
                 </ul>
             </div>

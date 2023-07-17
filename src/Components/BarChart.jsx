@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Chart, CategoryScale, LinearScale, BarController, BarElement, Tooltip } from 'chart.js';
+import styles from "../styles/BarChart.module.css";
 
 const BarChart = ({data}) => {
     console.log(data)
@@ -39,8 +40,8 @@ const BarChart = ({data}) => {
     }, []);
 
     return (
-        <div style={{ width: "90%",height:"78%", margin:"auto", display:"flex", justifyContent:"center", alignItems:"center" }}>
-            <canvas style={{width:"90%",height:"78%",display:"flex", justifyContent:"center", alignItems:"center"}} ref={chartRef} />
+        <div className={styles.container} style={{height:data.height}}>
+            <canvas style={{height:data.height}} ref={chartRef} />
         </div>
     )
 

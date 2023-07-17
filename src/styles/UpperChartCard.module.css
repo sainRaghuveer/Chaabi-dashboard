@@ -1,6 +1,5 @@
 .card{
     height: 100%;
-    /* border: 1px solid aqua; */
     width: 24%;
     padding: 10px;
     border-radius: 10px;
@@ -81,3 +80,37 @@
     margin: 0px 4px;
 }
 
+@media all and (width<=1100px){
+    .card-child-content>div{
+        width: 100%;
+    }
+}
+
+@media all  and (width<=972px) {
+    .card{
+        width: 90%;
+    }
+
+    .card-child-content>div{
+        width: 55%;
+    }
+}
+
+@media all  and (width<=800px) {
+    .card-child-content>div{
+        width: 80%;
+    }
+}
+
+@media all  and (width<=670px) {
+    .card{
+        width: 100%;
+    }
+    .card-child-content>div{
+        width: 90%;
+    }
+}
+
+@media all  and (width<=550px) {
+    
+}

@@ -1,0 +1,105 @@
+.chart-container{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .chapter-container{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .chapter-container>div>ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  .chapter-container>div>ul>li{
+    margin-bottom: 10px;
+  }
+
+  .text{
+    font-size: 9px;
+  }
+
+  .content-one{
+    display: flex;
+    align-items: center;
+  }
+
+  .content-one>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #0d62ff;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .content-two{
+    display: flex;
+    align-items: center;
+  }
+
+  .content-two>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #8e14d8;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .content-three{
+    display: flex;
+    align-items: center;
+  }
+
+  .content-three>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ed1c24;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .content-four{
+    display: flex;
+    align-items: center;
+  }
+
+  .content-four>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #c2c2c2;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .content-five{
+    display: flex;
+    align-items: center;
+  }
+
+  .content-five>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #425f57;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  @media all  and (width<=972px){
+    .chart-container{
+      width: 63%;
+    }
+  }

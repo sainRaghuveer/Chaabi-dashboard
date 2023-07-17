@@ -1,0 +1,27 @@
+.container{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container>canvas{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all  and (width<=972px){
+    .container{
+        width: 90%;
+    }
+    
+    .container>canvas{
+        width: 90%;
+    }  
+}
+

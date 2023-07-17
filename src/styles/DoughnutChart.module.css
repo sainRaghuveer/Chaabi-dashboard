@@ -1,0 +1,107 @@
+.container{
+  display: flex;
+  width: 93%;
+  height: 140px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+}
+
+
+.container>canvas{
+    width: 100%;
+    margin-right: 20px;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div>ul{
+    list-style: none;
+    padding: 0;
+}
+
+.container.div>ul>li{
+    margin-bottom: 10px;
+}
+
+.first-list-child-one{
+    display: flex;
+    align-items: center;
+
+}
+
+.first-list-child-one>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.first-list-child-one>span:nth-child(2){
+    font-weight: bold;
+}
+
+.first-list-child-two{
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.second-list-child-one{
+    display: flex;
+    align-items: center;
+
+}
+
+.second-list-child-one>span:nth-child(1){
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.second-list-child-one>span:nth-child(2){
+    font-weight: bold;
+}
+
+.second-list-child-two{
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+
+@media all and (width<=1300px){
+    .container{
+        width: 100%;
+    }
+    .container>canvas{
+        width: 95%;
+    }
+}
+
+
+@media all and (width<=1100px){
+    .container{
+        width: 100%;
+    }
+    .container>canvas{
+        width: 95%;
+    }
+}
+
+@media all  and (width<=550px){
+    .container{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .container>canvas{
+        width: 90%;
+    }
+}

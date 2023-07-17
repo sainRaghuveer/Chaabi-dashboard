@@ -6,6 +6,7 @@ import BarChart from './BarChart';
 import DoughnutChart from './DoughnutChart';
 import PieChart from './SliceChart';
 import {AiOutlineArrowUp} from "react-icons/ai";
+import BottomChartFirstContent from './BottomChartFirstContent';
 
 const MainSection = () => {
     return (
@@ -49,39 +50,8 @@ const MainSection = () => {
                     <div className={styles['bottom-charts-first']}>
                         <h5>Monthly Training Activity</h5>
                         <div>{<AiOutlineArrowUp color='#5e96ff'/>}<p>16% more enrollees this month</p></div>
-                        <div>
-                            <ul style={{ listStyle: 'none', padding: 0 }}>
-                                <li style={{ marginBottom: '10px' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <span style={{ display: 'inline-block', width: '10px', height: '10px', marginRight: '5px', borderRadius: '50%', border:"2px solid #5e96ff" }}></span>
-                                        <span style={{fontWeight: 'bold', fontSize:"10px" }}>course a</span>
-                                    </div>
-                                    <div style={{ marginLeft: '15px',fontSize:"7px", }}>23 workers took this course this week</div>
-                                </li>
-                                <li style={{ marginBottom: '10px' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <span style={{ display: 'inline-block', width: '10px', height: '10px',marginRight: '5px', borderRadius: '50%', border:"2px solid #5e96ff" }}></span>
-                                        <span style={{ fontWeight: 'bold', fontSize:"10px" }}>course b</span>
-                                    </div>
-                                    <div style={{ marginLeft: '15px',fontSize:"7px" }}>253 workers took this course this week</div>
-                                </li>
-                                <li style={{ marginBottom: '10px' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <span style={{ display: 'inline-block', width: '10px', height: '10px', marginRight: '5px', borderRadius: '50%', border:"2px solid #5e96ff" }}></span>
-                                        <span style={{ fontWeight: 'bold',fontSize:"10px" }}>course c</span>
-                                    </div>
-                                    <div style={{ marginLeft: '15px',fontSize:"7px" }}>253 workers took this course this week</div>
-                                </li>
-                                <li style={{ marginBottom: '10px' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <span style={{ display: 'inline-block', width: '10px', height: '10px',marginRight: '5px', borderRadius: '50%', border:"2px solid #5e96ff" }}></span>
-                                        <span style={{ fontWeight: 'bold',fontSize:"10px" }}>course d</span>
-                                    </div>
-                                    <div style={{ marginLeft: '15px',fontSize:"7px" }}>253 workers took this course this week</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        {<BottomChartFirstContent/>}
+                     </div>   
                     <div className={styles['bottom-charts-second']}>
                         <h5>Quiz Passing %</h5>
                         {<DoughnutChart />}

@@ -76,3 +76,36 @@
 .sidebar-option:hover::before{
     width: 100%;
 }
+
+
+@media all and (width<=1100px){
+    .logo{
+        display: none;
+    }
+    .container{
+        flex: 1;
+        /* width: fit-content; */
+        /* flex: none; */
+        /* position: fixed; */
+        /* left: 0; */
+        /* bottom: 0; */
+        /* transform: translate(-50%, 0); */
+        /* right: 0; */
+        /* top: 0; */
+        /* z-index: 5; */
+        /* height: fit-content; */
+    }
+    /* .sidebar-options{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } */
+
+    .sidebar-option>span{
+        display: none;
+    }
+
+    .sidebar-options{
+        padding: 0;
+    }
+}
