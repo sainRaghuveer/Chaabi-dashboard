@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-color: #e6eeff;
+  animation-name: text-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 code {
@@ -18,4 +22,22 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  animation-name: text-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }

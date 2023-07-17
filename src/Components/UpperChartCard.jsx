@@ -5,7 +5,7 @@ import { PiTrendUpBold } from "react-icons/pi";
 
 const UpperChartCard = ({ title, data, percents, number, color, bg }) => {
     return (
-        <div className={styles['card']}>
+        <div className={`${styles['card']} ${styles['fade-in']}`}>
             <h5>{title}</h5>
             <div className={styles['card-child']}>
                 <div className={styles['card-child-content']}>
